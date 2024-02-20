@@ -1,0 +1,8 @@
+{
+  "parent": "subblocks:block/templates/template_vertical_stairs",
+  "textures": {
+    "top": "minecraft:block/oak_planks",
+    "bottom": "minecraft:block/oak_planks",
+    "side": "minecraft:block/oak_planks"
+  }
+}
