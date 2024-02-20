@@ -19,6 +19,8 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -86,6 +88,28 @@ public class SidingBlock extends AbstractSubBlock {
             Direction direction = ctx.getSide();
             return direction == Direction.UP ? blockState2 : direction == Direction.EAST ? blockState2.with(ORIENTATION, Orientation.VERTICAL).with(FACING, Direction.WEST) : direction == Direction.WEST ? blockState2.with(ORIENTATION, Orientation.VERTICAL).with(FACING, Direction.EAST) : direction == Direction.SOUTH ? blockState2.with(ORIENTATION, Orientation.VERTICAL).with(FACING, Direction.NORTH) : direction == Direction.NORTH ? blockState2.with(ORIENTATION, Orientation.VERTICAL).with(FACING, Direction.SOUTH) : (BlockState)blockState2.with(TYPE, SlabType.TOP);
         }
+    }
+
+    @Deprecated
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        if (rotation == BlockRotation.NONE) {
+            return state;
+        }
+        state = state.with(FACING, state.get(FACING).rotateYClockwise());
+        if (rotation == BlockRotation.CLOCKWISE_90) {
+            return state;
+        }
+        state = state.with(FACING, state.get(FACING).rotateYClockwise());
+        if (rotation == BlockRotation.CLOCKWISE_180) {
+            return state;
+        }
+        return state.with(FACING, state.get(FACING).rotateYClockwise());
+    }
+
+    @Deprecated
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        Direction facing = state.get(FACING);
+        return (mirror == BlockMirror.FRONT_BACK && facing.getAxis() == Direction.Axis.X) || (mirror == BlockMirror.LEFT_RIGHT && facing.getAxis() == Direction.Axis.Z) ? state.with(FACING, facing.getOpposite()) : state;
     }
 
     public boolean canReplace(BlockState state, ItemPlacementContext context) {
