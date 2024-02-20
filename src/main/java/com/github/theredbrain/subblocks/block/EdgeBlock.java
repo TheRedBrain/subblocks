@@ -16,6 +16,8 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
@@ -217,6 +219,16 @@ public class EdgeBlock extends AbstractSubBlock {
 
         BlockHalf newHalf = direction != Direction.DOWN && (direction == Direction.UP || !(hitPos.y - (double)blockPos.getY() > 0.5D)) ? BlockHalf.BOTTOM : BlockHalf.TOP;
         return (BlockState)((BlockState)((BlockState)((BlockState)this.getDefaultState().with(FACING, hitPosToFacing)).with(HALF, newHalf)).with(ORIENTATION, hitPosToOrientation)).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+    }
+
+    @Deprecated
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        return state; // TODO
+    }
+
+    @Deprecated
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state; // TODO
     }
 
     @Override

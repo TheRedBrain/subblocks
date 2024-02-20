@@ -9,6 +9,8 @@ import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.*;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -70,6 +72,16 @@ public class TwoWayEdgeBlock extends AbstractSubBlock {
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState();
+    }
+
+    @Deprecated
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        return state; // TODO
+    }
+
+    @Deprecated
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state; // TODO
     }
 
     @Override

@@ -38,6 +38,7 @@
     "orientation=horizontal,facing=north,half=top": {
       "model": "minecraft:block/oak_stairs",
       "uvlock": true,
+      "x": 180,
       "y": 270
     },
     "orientation=vertical,facing=east,half=bottom": {

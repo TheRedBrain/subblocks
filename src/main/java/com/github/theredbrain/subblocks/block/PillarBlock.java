@@ -8,6 +8,8 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -43,6 +45,16 @@ public class PillarBlock extends AbstractSubBlock {
         BlockPos blockPos = ctx.getBlockPos();
         FluidState fluidState = ctx.getWorld().getFluidState(blockPos);
         return this.getDefaultState().with(AXIS, ctx.getSide().getAxis()).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+    }
+
+    @Deprecated
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        return state; // TODO
+    }
+
+    @Deprecated
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state; // TODO
     }
 
     @Override

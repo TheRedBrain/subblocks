@@ -13,6 +13,8 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.*;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -158,6 +160,16 @@ public class CornerBlock extends AbstractSubBlock {
 
         BlockHalf newHalf = direction != Direction.DOWN && (direction == Direction.UP || !(hitPos.y - (double)blockPos.getY() > 0.5D)) ? BlockHalf.BOTTOM : BlockHalf.TOP;
         return this.getDefaultState().with(FACING, hitPosToFacing).with(HALF, newHalf).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
+    }
+
+    @Deprecated
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        return state; // TODO
+    }
+
+    @Deprecated
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state; // TODO
     }
 
     public boolean canReplace(BlockState state, ItemPlacementContext context) {

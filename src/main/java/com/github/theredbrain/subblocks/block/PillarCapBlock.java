@@ -14,6 +14,8 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -71,6 +73,16 @@ public class PillarCapBlock extends AbstractSubBlock {
         BlockState blockState2 = (BlockState)((BlockState)this.getDefaultState().with(FACING, Direction.UP)).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
         Direction direction = ctx.getSide();
         return direction == Direction.UP ? blockState2 : direction == Direction.EAST ? blockState2.with(FACING, Direction.EAST) : direction == Direction.WEST ? blockState2.with(FACING, Direction.WEST) : direction == Direction.SOUTH ? blockState2.with(FACING, Direction.SOUTH) : direction == Direction.NORTH ? blockState2.with(FACING, Direction.NORTH) : blockState2.with(FACING, Direction.DOWN);
+    }
+
+    @Deprecated
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        return state; // TODO
+    }
+
+    @Deprecated
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state; // TODO
     }
 
     @Override
