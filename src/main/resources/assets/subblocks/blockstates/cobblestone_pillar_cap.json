@@ -1,0 +1,32 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "subblocks:block/pillar_caps/cobblestone_horizontal_pillar_cap",
+      "uvlock": true,
+      "x": 180
+    },
+    "facing=down": {
+      "model": "subblocks:block/pillar_caps/cobblestone_horizontal_pillar_cap",
+      "uvlock": true
+    },
+    "facing=east": {
+      "model": "subblocks:block/pillar_caps/cobblestone_vertical_pillar_cap",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=south": {
+      "model": "subblocks:block/pillar_caps/cobblestone_vertical_pillar_cap",
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "subblocks:block/pillar_caps/cobblestone_vertical_pillar_cap",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "subblocks:block/pillar_caps/cobblestone_vertical_pillar_cap",
+      "uvlock": true,
+      "y": 180
+    }
+  }
+}

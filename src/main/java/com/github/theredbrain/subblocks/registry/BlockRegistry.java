@@ -16,15 +16,15 @@ import net.minecraft.util.Identifier;
 
 public class BlockRegistry {
     public static void init() {
-//        registerSubBlocks("acacia", Blocks.ACACIA_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
-//        registerSubBlocks("birch", Blocks.BIRCH_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
-//        registerSubBlocks("cherry", Blocks.CHERRY_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
-//        registerSubBlocks("cobblestone", Blocks.COBBLESTONE, ItemGroupRegistry.SUB_BLOCKS);
-//        registerSubBlocks("dark_oak", Blocks.DARK_OAK_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
-//        registerSubBlocks("jungle", Blocks.JUNGLE_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
-//        registerSubBlocks("mangrove", Blocks.MANGROVE_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
-//        registerSubBlocks("oak", Blocks.OAK_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
-//        registerSubBlocks("spruce", Blocks.SPRUCE_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("acacia", Blocks.ACACIA_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("birch", Blocks.BIRCH_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("cherry", Blocks.CHERRY_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("cobblestone", Blocks.COBBLESTONE, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("dark_oak", Blocks.DARK_OAK_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("jungle", Blocks.JUNGLE_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("mangrove", Blocks.MANGROVE_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("oak", Blocks.OAK_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
+        registerSubBlocks("spruce", Blocks.SPRUCE_PLANKS, ItemGroupRegistry.SUB_BLOCKS);
         registerSubBlocks("stone", Blocks.STONE, ItemGroupRegistry.SUB_BLOCKS);
     }
     private static void registerSubBlocks(String name, Block baseBlock, RegistryKey<ItemGroup> itemGroup) {

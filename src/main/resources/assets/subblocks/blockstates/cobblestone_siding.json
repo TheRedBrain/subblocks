@@ -1,0 +1,114 @@
+{
+  "variants": {
+    "orientation=horizontal,facing=east,type=bottom": {
+      "model": "minecraft:block/cobblestone_slab",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=horizontal,facing=east,type=double": {
+      "model": "minecraft:block/cobblestone",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=horizontal,facing=east,type=top": {
+      "model": "minecraft:block/cobblestone_slab_top",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=horizontal,facing=south,type=bottom": {
+      "model": "minecraft:block/cobblestone_slab",
+      "uvlock": true
+    },
+    "orientation=horizontal,facing=south,type=double": {
+      "model": "minecraft:block/cobblestone",
+      "uvlock": true
+    },
+    "orientation=horizontal,facing=south,type=top": {
+      "model": "minecraft:block/cobblestone_slab_top",
+      "uvlock": true
+    },
+    "orientation=horizontal,facing=west,type=bottom": {
+      "model": "minecraft:block/cobblestone_slab",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=horizontal,facing=west,type=double": {
+      "model": "minecraft:block/cobblestone",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=horizontal,facing=west,type=top": {
+      "model": "minecraft:block/cobblestone_slab_top",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=horizontal,facing=north,type=bottom": {
+      "model": "minecraft:block/cobblestone_slab",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=horizontal,facing=north,type=double": {
+      "model": "minecraft:block/cobblestone",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=horizontal,facing=north,type=top": {
+      "model": "minecraft:block/cobblestone_slab_top",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=vertical,facing=east,type=bottom": {
+      "model": "subblocks:block/sidings/cobblestone_siding",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=vertical,facing=east,type=double": {
+      "model": "minecraft:block/cobblestone"
+    },
+    "orientation=vertical,facing=east,type=top": {
+      "model": "subblocks:block/sidings/cobblestone_siding",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=vertical,facing=south,type=bottom": {
+      "model": "subblocks:block/sidings/cobblestone_siding",
+      "uvlock": true
+    },
+    "orientation=vertical,facing=south,type=double": {
+      "model": "minecraft:block/cobblestone",
+      "uvlock": true
+    },
+    "orientation=vertical,facing=south,type=top": {
+      "model": "subblocks:block/sidings/cobblestone_siding",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=vertical,facing=west,type=bottom": {
+      "model": "subblocks:block/sidings/cobblestone_siding",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=vertical,facing=west,type=double": {
+      "model": "minecraft:block/cobblestone",
+      "uvlock": true
+    },
+    "orientation=vertical,facing=west,type=top": {
+      "model": "subblocks:block/sidings/cobblestone_siding",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=vertical,facing=north,type=bottom": {
+      "model": "subblocks:block/sidings/cobblestone_siding",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=vertical,facing=north,type=double": {
+      "model": "minecraft:block/cobblestone",
+      "uvlock": true
+    },
+    "orientation=vertical,facing=north,type=top": {
+      "model": "subblocks:block/sidings/cobblestone_siding",
+      "uvlock": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "subblocks:block/pillars/dark_oak_horizontal_pillar",
+      "uvlock": true,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "subblocks:block/pillars/dark_oak_vertical_pillar",
+      "uvlock": true
+    },
+    "axis=z": {
+      "model": "subblocks:block/pillars/dark_oak_horizontal_pillar",
+      "uvlock": true
+    }
+  }
+}

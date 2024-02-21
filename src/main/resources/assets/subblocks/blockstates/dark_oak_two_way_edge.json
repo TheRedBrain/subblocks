@@ -1,0 +1,172 @@
+{
+  "variants": {
+    "orientation=horizontal,facing=east,half=bottom,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=horizontal,facing=east,half=bottom,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=horizontal,facing=east,half=top,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "orientation=horizontal,facing=east,half=top,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "orientation=horizontal,facing=south,half=bottom,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true
+    },
+    "orientation=horizontal,facing=south,half=bottom,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=horizontal,facing=south,half=top,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "orientation=horizontal,facing=south,half=top,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "orientation=horizontal,facing=west,half=bottom,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=horizontal,facing=west,half=bottom,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true
+    },
+    "orientation=horizontal,facing=west,half=top,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "x": 180
+    },
+    "orientation=horizontal,facing=west,half=top,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "orientation=horizontal,facing=north,half=bottom,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=horizontal,facing=north,half=bottom,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=horizontal,facing=north,half=top,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "orientation=horizontal,facing=north,half=top,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_horizontal_two_way_edge",
+      "uvlock": true,
+      "x": 180
+    },
+    "orientation=vertical,facing=east,half=bottom,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=vertical,facing=east,half=bottom,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge_mirrored",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=vertical,facing=east,half=top,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge_mirrored",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "orientation=vertical,facing=east,half=top,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "orientation=vertical,facing=south,half=bottom,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge",
+      "uvlock": true
+    },
+    "orientation=vertical,facing=south,half=bottom,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge_mirrored",
+      "uvlock": true
+    },
+    "orientation=vertical,facing=south,half=top,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge_mirrored",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "orientation=vertical,facing=south,half=top,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "orientation=vertical,facing=west,half=bottom,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=vertical,facing=west,half=bottom,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge_mirrored",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=vertical,facing=west,half=top,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge_mirrored",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "orientation=vertical,facing=west,half=top,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "orientation=vertical,facing=north,half=bottom,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=vertical,facing=north,half=bottom,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge_mirrored",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=vertical,facing=north,half=top,mirrored=false": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge_mirrored",
+      "uvlock": true,
+      "x": 180
+    },
+    "orientation=vertical,facing=north,half=top,mirrored=true": {
+      "model": "subblocks:block/two_way_edges/dark_oak_vertical_two_way_edge",
+      "uvlock": true,
+      "x": 180
+    }
+  }
+}
