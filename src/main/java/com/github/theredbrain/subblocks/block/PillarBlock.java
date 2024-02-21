@@ -49,12 +49,16 @@ public class PillarBlock extends AbstractSubBlock {
 
     @Deprecated
     public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return state; // TODO
+        Direction.Axis axis = state.get(AXIS);
+        if (axis.isHorizontal() && (rotation == BlockRotation.CLOCKWISE_90 || rotation == BlockRotation.COUNTERCLOCKWISE_90)) {
+            return axis == Direction.Axis.X ? state.with(AXIS, Direction.Axis.Z) : state.with(AXIS, Direction.Axis.X);
+        }
+        return state;
     }
 
     @Deprecated
     public BlockState mirror(BlockState state, BlockMirror mirror) {
-        return state; // TODO
+        return state;
     }
 
     @Override

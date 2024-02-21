@@ -174,12 +174,24 @@ public class ThreeWayEdgeBlock extends AbstractSubBlock {
 
     @Deprecated
     public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return state; // TODO
+        if (rotation == BlockRotation.NONE) {
+            return state;
+        }
+        state = state.with(FACING, state.get(FACING).rotateYClockwise());
+        if (rotation == BlockRotation.CLOCKWISE_90) {
+            return state;
+        }
+        state = state.with(FACING, state.get(FACING).rotateYClockwise());
+        if (rotation == BlockRotation.CLOCKWISE_180) {
+            return state;
+        }
+        return state.with(FACING, state.get(FACING).rotateYClockwise());
     }
 
     @Deprecated
     public BlockState mirror(BlockState state, BlockMirror mirror) {
-        return state; // TODO
+        Direction facing = state.get(FACING);
+        return (mirror == BlockMirror.FRONT_BACK && facing.getAxis() == Direction.Axis.X) || (mirror == BlockMirror.LEFT_RIGHT && facing.getAxis() == Direction.Axis.Z) ? state.with(FACING, facing.rotateYClockwise()) : state.with(FACING, facing.rotateYCounterclockwise());
     }
 
     @Override

@@ -1,5 +1,5 @@
 {
-  "parent": "subblocks:block/templates/template_outer_stairs",
+  "parent": "subblocks:block/templates/template_vertical_outer_stairs_mirrored",
   "textures": {
     "top": "minecraft:block/stone",
     "bottom": "minecraft:block/stone",

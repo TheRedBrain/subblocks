@@ -1,5 +1,5 @@
 {
-  "parent": "subblocks:block/templates/template_two_way_edge",
+  "parent": "subblocks:block/templates/template_horizontal_outer_stairs",
   "textures": {
     "top": "minecraft:block/stone",
     "bottom": "minecraft:block/stone",
